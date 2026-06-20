@@ -1,9 +1,6 @@
 #include <IOT_security_model_inferencing.h>//custom library showing friwndlies and hostiles
 
 
-
-
-
 /*******************************************************************************************
  * ESP32-CAM Smart Security Stream + Edge Impulse Detection
  * Features:
@@ -14,17 +11,16 @@
  *******************************************************************************************/
 /* ESP32-CAM Smart Stream + Detection
  * ----------------------------------
- * ✅ Optimized for RAM safety (PSRAM buffers)
- * ✅ Non-blocking stream + background inference
- * ✅ Bounding boxes, labels, and confidence %
- * ✅ No accumulation — always current frame
- * ✅ Fixed queue assert error
+ * Optimized for RAM safety (PSRAM buffers)
+ *  Non-blocking stream + background inference
+ *  Bounding boxes, labels, and confidence %
+ *  No accumulation — always current frame
+ *  Fixed Queue assert error
  */
 
 #include "esp_camera.h"
 #include <WiFi.h>
 #include "esp_http_server.h"
-//#include <IOT_security_model_inferencing.h>// Edge Impulse model
 #include "edge-impulse-sdk/dsp/image/image.hpp"
 
 // ===================
